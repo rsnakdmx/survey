@@ -15,6 +15,12 @@ class Page extends React.Component
                 </Navbar>
                 <Container className="my-5">
                     <Form>
+                        <Row>
+                            <Col md={ 12 }>
+                                <Form.Label>Nombre del participante</Form.Label>
+                                <Form.Control type="text" />
+                            </Col>
+                        </Row>
                         <hr />
                         <Row>
                             <Col md={ 6 }>
@@ -710,7 +716,7 @@ class Page extends React.Component
                             <Col md={ 6 }>
                                 <Table bordered>
                                     <thead>
-                                        <tr>
+                                        <tr className="text-center">
                                             <th colSpan={ 2 }>FÍSICO-MATEMÁTICAS E INGENIERÍAS</th>
                                         </tr>
                                     </thead>
@@ -769,7 +775,7 @@ class Page extends React.Component
                             <Col md={ 6 }>
                                 <Table bordered>
                                     <thead>
-                                        <tr>
+                                        <tr className="text-center">
                                             <th colSpan={ 2 }>SOCIALES</th>
                                         </tr>
                                     </thead>
@@ -830,7 +836,7 @@ class Page extends React.Component
                             <Col md={ 6 }>
                                 <Table bordered>
                                     <thead>
-                                        <tr>
+                                        <tr className="text-center">
                                             <th colSpan={ 2 }>BIOLÓGICAS Y DE LA SALUD</th>
                                         </tr>
                                     </thead>
@@ -876,7 +882,7 @@ class Page extends React.Component
                             <Col md={ 6 }>
                                 <Table bordered>
                                     <thead>
-                                        <tr>
+                                        <tr className="text-center">
                                             <th colSpan={ 2 }>HUMANIDADES Y ARTES</th>
                                         </tr>
                                     </thead>
