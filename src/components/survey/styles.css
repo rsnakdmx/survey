@@ -1,6 +1,15 @@
+.subtitle
+{
+    font-size: large;
+    font-weight: bolder
+}
+
+.subsubtitle
+{
+    font-weight: bold;
+}
+
 label
 {
-    margin-bottom: 0 !important;
-    margin-top: 10px;
-    font-weight: bold
+    margin-bottom: 0 !important
 }
