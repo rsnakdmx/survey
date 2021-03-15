@@ -1,12 +1,13 @@
 import React from 'react';
-import { Col, Container, Form, Navbar, Row, Table } from 'react-bootstrap';
+import { Button, Col, Container, Form, Navbar, Row, Table } from 'react-bootstrap';
+import Message from '../message/index';
 import './styles.css';
 
 class Page extends React.Component
 {
     render()
     {
-        const { catedo, changeValue } = this.props;
+        const { catedo, saved, changeValue, sendSurvey } = this.props;
 
         return (
             <>
@@ -16,6 +17,7 @@ class Page extends React.Component
                     </Navbar.Brand>
                 </Navbar>
                 <Container className="my-5">
+                    { (saved) ? <Message /> :
                     <Form>
                         <hr />
                         <Row>
@@ -83,7 +85,7 @@ class Page extends React.Component
                             <Col md={ 4 }>
                                 <Form.Label>Estado</Form.Label>
                                 <Form.Control name="estadonac" as="select" onChange={ changeValue }>
-                                { (catedo) ? catedo.map(data => <option value={ data.id }>{data.descr}</option>) : null } 
+                                { (catedo) ? catedo.map(data => <option key={ data.ID } value={ data.ID }>{data.DESCR}</option>) : null } 
                                 </Form.Control>
                             </Col>
                         </Row>
@@ -1014,7 +1016,13 @@ class Page extends React.Component
                             </Col>
                         </Row>
                         <hr />
+                        <Row>
+                            <Col className="text-right" md={ 12 }>
+                                <Button variant="dark" onClick={ sendSurvey }>Guardar</Button>
+                            </Col>
+                        </Row>
                     </Form>
+                    }
                 </Container>
             </>
         );
