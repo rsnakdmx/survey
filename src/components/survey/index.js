@@ -160,8 +160,8 @@ class Survey extends React.Component
     {
         const { semestre, matricula, carrera, nombre, primape, segape, edad, genero, municnac, ciudadnac, 
                 estadonac, domact, municact, vivsol, vivpad, vivmad, vivher, vivotro, domtip, maxescpad, 
-                oficpad, maxescmad, oficmad, hermedad1, mermesc1, hermofic1, hermedad2, mermesc2, hermofic2, 
-                hermedad3, mermesc3, hermofic3, hermedad4, mermesc4, hermofic4, biecomp, bieinter, biefija, 
+                oficpad, maxescmad, oficmad, hermedad1, hermesc1, hermofic1, hermedad2, hermesc2, hermofic2, 
+                hermedad3, hermesc3, hermofic3, hermedad4, hermesc4, hermofic4, biecomp, bieinter, biefija, 
                 biesat, bievehi, sermimss, sevmisst, servmsp, servmpar, estciv, hijos, edades, estlabno, estlabsi, 
                 estlabvac, horario, ingreso, estlabcno, estlabcsi, estlabcvac, horarioc, ingresoc, formmedsup, formmedsupo, 
                 isprimopc, cartecarea, prommedsup, primopc, primdate, segopc, segdate, tercopc, tercdate, arq, ccomp, fismat, 
@@ -204,16 +204,16 @@ class Survey extends React.Component
         params.append('maxescmad', maxescmad);
         params.append('oficmad', oficmad);
         params.append('hermedad1', hermedad1);
-        params.append('mermesc1', mermesc1);
+        params.append('hermesc1', hermesc1);
         params.append('hermofic1', hermofic1);
         params.append('hermedad2', hermedad2);
-        params.append('mermesc2', mermesc2);
+        params.append('hermesc2', hermesc2);
         params.append('hermofic2', hermofic2);
         params.append('hermedad3', hermedad3);
-        params.append('mermesc3', mermesc3);
+        params.append('hermesc3', hermesc3);
         params.append('hermofic3', hermofic3);
         params.append('hermedad4', hermedad4);
-        params.append('mermesc4', mermesc4);
+        params.append('hermesc4', hermesc4);
         params.append('hermofic4', hermofic4);
         params.append('biecomp', biecomp);
         params.append('bieinter', bieinter);
